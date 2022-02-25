@@ -29,6 +29,17 @@ module.exports = {
         }
     },
     "rules": {
-        "prettier/prettier": "error"
-    }
+    		"linebreak-style": ["error", (require("os").EOL === "\r\n" ? "windows" : "unix")],
+    		"react/prop-types": "off",
+    		"prettier/prettier": [
+    	  		"error",
+  	  	  	{
+	  	  	    	"useTabs": true,
+        				"semi": true,
+        				"jsxSingleQuote": true,
+  	  	    		"singleQuote": true,
+	  	  		    "endOfLine" : "auto"
+    			  }
+	    	]
+	  }
 };
