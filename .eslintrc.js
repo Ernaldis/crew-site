@@ -20,7 +20,8 @@ module.exports = {
         "sourceType": "module"
     },
     "plugins": [
-        "react"
+        "react",
+        "prettier"
     ],
     "settings": {
         react: {
@@ -28,5 +29,6 @@ module.exports = {
         }
     },
     "rules": {
+        "prettier/prettier": "error"
     }
 };
