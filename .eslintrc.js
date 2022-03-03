@@ -34,7 +34,7 @@ module.exports = {
     		"prettier/prettier": [
     	  		"error",
   	  	  	{
-	  	  	    	"useTabs": true,
+	  	  	    	"useTabs": false,
         				"semi": true,
         				"jsxSingleQuote": true,
   	  	    		"singleQuote": true,
