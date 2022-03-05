@@ -6,6 +6,8 @@ const Home = lazy(() => import('./pages/Home/Home'));
 const NotFound = lazy(() => import('./pages/NotFound/NotFound'));
 
 const NavBar = lazy(() => import('./components/Navbar/Navbar'));
+//const Loading = lazy(() => import('./components/Loading/Loading'));
+import FourOFour from './components/404/FourOFour';
 
 const queryClient = new QueryClient();
 
@@ -13,13 +15,12 @@ const App = () => {
   return (
     <QueryClientProvider client={queryClient}>
       <Router>
-        <Suspense fallback={<>...</>}>
+        <Suspense fallback={<>Loading...</>}>
           <NavBar />
           <Routes>
             <Route path='/' element={<Home />} />
-          </Routes>
-          <Routes>
-            <Route path='*' element={<NotFound />} />
+            <Route path='/404' element={<NotFound />} />
+            <Route path='*' element={<FourOFour />} />
           </Routes>
         </Suspense>
       </Router>
