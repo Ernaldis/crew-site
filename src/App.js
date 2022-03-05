@@ -7,7 +7,7 @@ const NotFound = lazy(() => import('./pages/NotFound/NotFound'));
 
 const NavBar = lazy(() => import('./components/Navbar/Navbar'));
 //const Loading = lazy(() => import('./components/Loading/Loading'));
-import FourOFour from './components/404/FourOFour';
+const FourOFour = lazy(() => import('./components/404/FourOFour'));
 
 const queryClient = new QueryClient();
 
