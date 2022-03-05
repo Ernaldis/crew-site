@@ -1,5 +1,8 @@
 import React from 'react';
-import { Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import 'bootstrap/dist/css/bootstrap.css';
 import { LinkContainer } from 'react-router-bootstrap';
 import logo from '../../assets/logo.png';
 //import './Navbar.css';
