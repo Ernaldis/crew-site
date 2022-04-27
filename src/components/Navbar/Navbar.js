@@ -1,11 +1,11 @@
-import React from 'react';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import 'bootstrap/dist/css/bootstrap.css';
-import { LinkContainer } from 'react-router-bootstrap';
-import logo from '../../assets/logo.png';
-//import './Navbar.css';
+import React from 'react'
+import Nav from 'react-bootstrap/Nav'
+import Navbar from 'react-bootstrap/Navbar'
+import NavDropdown from 'react-bootstrap/NavDropdown'
+import 'bootstrap/dist/css/bootstrap.css'
+import { LinkContainer } from 'react-router-bootstrap'
+import logo from '../../assets/logo.png'
+// import './Navbar.css';
 
 const NavBar = () => (
   <Navbar collapseOnSelect expand='lg' bg='light' variant='light' fluid='true'>
@@ -44,6 +44,6 @@ const NavBar = () => (
       </Nav>
     </Navbar.Collapse>
   </Navbar>
-);
+)
 
-export default NavBar;
+export default NavBar

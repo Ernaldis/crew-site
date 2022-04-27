@@ -1,15 +1,15 @@
-import React, { lazy, Suspense } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { QueryClient, QueryClientProvider } from 'react-query';
+import React, { lazy, Suspense } from 'react'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import { QueryClient, QueryClientProvider } from 'react-query'
 
-const Home = lazy(() => import('./pages/Home/Home'));
-const NotFound = lazy(() => import('./pages/NotFound/NotFound'));
+const Home = lazy(() => import('./pages/Home/Home'))
+const NotFound = lazy(() => import('./pages/NotFound/NotFound'))
 
-const NavBar = lazy(() => import('./components/Navbar/Navbar'));
-//const Loading = lazy(() => import('./components/Loading/Loading'));
-const FourOFour = lazy(() => import('./components/404/FourOFour'));
+const NavBar = lazy(() => import('./components/Navbar/Navbar'))
+// const Loading = lazy(() => import('./components/Loading/Loading'));
+const FourOFour = lazy(() => import('./components/404/FourOFour'))
 
-const queryClient = new QueryClient();
+const queryClient = new QueryClient()
 
 const App = () => {
   return (
@@ -25,7 +25,7 @@ const App = () => {
         </Suspense>
       </Router>
     </QueryClientProvider>
-  );
-};
+  )
+}
 
-export default App;
+export default App

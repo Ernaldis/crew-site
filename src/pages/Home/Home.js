@@ -1,14 +1,14 @@
-import React from 'react';
-import { MetaData } from '../../components/Meta/MetaData';
-import './Home.css';
+import React from 'react'
+import { MetaData } from '../../components/Meta/MetaData'
+import './Home.css'
 
 const Home = () => {
   const meta = {
     title: 'Home',
     desc: 'Together, we can save a life.',
     url: 'https://scoutcpr.org/',
-    img: '../../assets/C911_Pick3.JPG',
-  };
+    img: '../../assets/C911_Pick3.JPG'
+  }
 
   return (
     <>
@@ -19,7 +19,7 @@ const Home = () => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home

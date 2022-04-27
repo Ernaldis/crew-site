@@ -1,5 +1,5 @@
-import React from 'react';
-import { Helmet } from 'react-helmet';
+import React from 'react'
+import { Helmet } from 'react-helmet'
 
 export const MetaData = ({ title, desc, url, img, children }) => {
   return (
@@ -21,5 +21,5 @@ export const MetaData = ({ title, desc, url, img, children }) => {
       <meta property='twitter:description' content={desc} />
       <meta property='twitter:image' content={img} />
     </Helmet>
-  );
-};
+  )
+}
